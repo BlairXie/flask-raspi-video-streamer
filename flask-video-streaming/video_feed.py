@@ -77,7 +77,7 @@ class EnableFeedHandler(base.BaseHandler):
         if not USER_STOP_LIST:
             self.log_message("Starting recording...")
             Camera.start_recording()
-            
+
 
 class DisableFeedHandler(base.BaseHandler):
     """
@@ -125,7 +125,7 @@ class VideoFeedHandler(base.BaseHandler):
         'Age': 0,
         'Cache-Control': 'no-cache, private',
         'Pragma': 'no-cache',
-        'Content-Type': 'multipart/x-mixed-replace; boundary=frame',
+        'Content-Type': 'image/jpeg; boundary=frame',#multipart/x-mixed-replace
     }
 
     def __init__(self):
