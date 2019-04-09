@@ -125,7 +125,7 @@ class VideoFeedHandler(base.BaseHandler):
         'Age': 0,
         'Cache-Control': 'no-cache, private',
         'Pragma': 'no-cache',
-        'Content-Type': 'image/jpeg; boundary=frame',#multipart/x-mixed-replace
+        'Content-Type': 'multipart/x-mixed-replace; boundary=frame',
     }
 
     def __init__(self):
